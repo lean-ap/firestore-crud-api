@@ -63,17 +63,20 @@ By default, the server runs on: http://localhost:3000
 
 
 ### API Endpoints
+```
 Method	Endpoint	    Description
 POST	/products	    Create a new product
 GET	    /products	    List all products
 GET	    /products/:id	Get a product by ID
 PUT	    /products/:id	Update a product
 DELETE	/products/:id	Delete a product
-
+```
 
 ### Sample json Payload
+```
 {
   "name": "Mechanical Keyboard",
   "price": 99.99,
   "inStock": true
 }
+```
