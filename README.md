@@ -36,9 +36,9 @@ api/
 
 ### 1. Clone the repo and enter project folder
 
-git clone https://github.com/yourusername/firestore-ts-api.git
+git clone https://github.com/lean-ap/firestore-crud-api.git
 
-cd firestore-ts-api/api
+cd firestore-crud-api/api
 
 ### 2. Install dependencies
 npm install
