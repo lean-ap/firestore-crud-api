@@ -4,6 +4,7 @@ This API supports CRUD operations on a `Product` collection.
 ---
 
 ## Project Structure
+```
 api/
 ├── src/
 │   ├── db.ts # Firestore DB initialization
@@ -19,7 +20,7 @@ api/
 ├── package.json
 ├── tsconfig.json
 └── README.md
-
+```
 ---
 
 ## Features
