@@ -37,6 +37,7 @@ api/
 ### 1. Clone the repo and enter project folder
 
 git clone https://github.com/yourusername/firestore-ts-api.git
+
 cd firestore-ts-api/api
 
 ### 2. Install dependencies
