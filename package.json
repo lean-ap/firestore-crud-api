@@ -15,7 +15,8 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "firebase": "^11.8.1",
-    "firebase-admin": "^13.4.0"
+    "firebase-admin": "^13.4.0",
+    "zod": "^3.25.53"
   },
   "devDependencies": {
     "@types/cors": "^2.8.18",
