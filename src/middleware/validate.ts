@@ -12,9 +12,9 @@ export const validate = (schema: ZodSchema) => (
         schema.parse(req.body);
         next();
     } catch (error: any) {
-        return res.status(400).json({
-            message: 'Validation failed',
-            errors: error.errors,
-        });
+        // return res.status(400).json({
+        //     message: 'Validation failed',
+        //     errors: error.errors,
+        next(error); // pass error to error handler instead of handling here
     }
 };
