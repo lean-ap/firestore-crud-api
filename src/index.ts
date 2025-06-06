@@ -1,6 +1,7 @@
 import express, {json,urlencoded} from 'express';
 import cors from 'cors';
 import productRoutes from './routes/products/index';
+import { logger } from './middleware/logger';
 
 const PORT = 3000;
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 app.use(urlencoded({extended: false}));
 app.use(cors())
 app.use(express.json());
+app.use(logger);
 
 app.get('/', (req, res) => {
     res.send("At root of API");
