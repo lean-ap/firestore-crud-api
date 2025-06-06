@@ -6,8 +6,8 @@ const PORT = 3000;
 const app = express();
 
 app.use(urlencoded({extended: false}));
-
-app.use(json());
+app.use(cors())
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send("At root of API");
