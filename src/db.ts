@@ -18,11 +18,21 @@ import serviceAccount from 'serviceAccountKey.json';
 // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount as ServiceAccount),
-});
+// Prevent multiple initializations (useful in dev with nodemon, etc.)
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount as ServiceAccount),
+  });
+}
 // Initialize Cloud Firestore and get a reference to the service
 const db = admin.firestore();
+
+// Graceful Shutdown Stub (for future extensibility)
+export const closeDbConnection = async () => {
+  console.log('Closing DB connection - (no action needed for Firebase)');
+  // Firebase Admin SDK doesn’t require explicit disconnect
+  // Flush logs, close other services, etc. here
+};
 
 export default db;
 // const serviceAccount = require('../serviceAccountKey.json');
