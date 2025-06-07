@@ -2,12 +2,12 @@
 // import {initialize} from 'fireorm';
 // import {firestore} from '@firebase/firestore'
 // // import serviceAccount from '../serviceAccountKey.json';
-import { initializeApp } from "firebase/app";
+// import { initializeApp } from 'firebase/app';
 // import { getFirestore } from "firebase/firestore";
-import { ServiceAccount} from 'firebase-admin';
-import admin from "firebase-admin";
+import { ServiceAccount } from 'firebase-admin';
+import admin from 'firebase-admin';
 
-import serviceAccount from "serviceAccountKey.json";
+import serviceAccount from 'serviceAccountKey.json';
 
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://support.google.com/firebase/answer/7015592
