@@ -9,6 +9,10 @@ api/
 ├── src/
 │   ├── db.ts # Firestore DB initialization
 │   ├── index.ts # Express server entry point
+│   ├── middleware/
+│   │   ├── errorHamdler.ts #Global error handler including zod error handling
+│   │   ├── logger.ts #Log each request (method, path, time).
+│   │   └── validate.ts #Input validation
 │   ├── models/
 │   │   └── Products.ts # Product data model
 │   └── routes/
