@@ -1,0 +1,8 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll": true
+  },
+  "eslint.experimental.useFlatConfig": true,
+  "editor.formatOnSave": false
+}
