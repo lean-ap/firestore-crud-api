@@ -7,25 +7,26 @@ This API supports CRUD operations on a `Product` collection.
 ```
 api/
 ├── src/
-│   ├── db.ts # Firestore DB initialization
-│   ├── index.ts # Express server entry point
-│   ├── middleware/
-│   │   ├── errorHamdler.ts #Global error handler including zod error handling
-│   │   ├── logger.ts #Log each request (method, path, time).
-│   │   └── validate.ts #Input validation
+│   ├── db.ts                    # Firestore client initialization
+│   ├── index.ts                 # Main entry point (Express app)
+│   ├── middleware/              # Custom Express middleware
+│   │   ├── errorHamdler.ts      # Global error handler including zod error handling
+│   │   ├── logger.ts            #Log each request (method, path, time).
+│   │   └── validate.ts          # Zod based input validation
 │   ├── models/
-│   │   └── Products.ts # Product data model
+│   │   └── Products.ts          # Product data model
 │   └── routes/
 │   │   └── products/
-│   │       ├── index.ts  #Products route declarations
+│   │       ├── index.ts         # Products route declarations
 │   │       └── productsController.ts # CRUD route handlers
 │   ├── utils/
-│   │   └── asyncHandler.ts - #handles async errors - catching rejected promises preventing server hang/crash
+│   │   └── asyncHandler.ts      # Wrapper for catching async errors in route handlershandles async errors - catching rejected promises preventing server hang/crash
 ├── serviceAccountKey.json # Firebase service account key(NO COMMIT)
 ├── .gitignore
-├── package.json
-├── tsconfig.json
-└── README.md
+├── eslint.config.js             # Linting rules (assumed ESLint config for TypeScript)
+├── package.json / lock.json     # Dependencies and scripts
+├── tsconfig.json                # TypeScript compiler config
+└── README.md                    # Project overview
 ```
 ---
 
