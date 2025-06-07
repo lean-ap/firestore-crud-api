@@ -16,9 +16,11 @@ api/
 │   ├── models/
 │   │   └── Products.ts # Product data model
 │   └── routes/
-│       └── products/
-│           ├── index.ts  #Products route declarations
-│           └── productsController.ts # CRUD route handlers
+│   │   └── products/
+│   │       ├── index.ts  #Products route declarations
+│   │       └── productsController.ts # CRUD route handlers
+│   ├── utils/
+│   │   └── asyncHandler.ts - #handles async errors - catching rejected promises preventing server hang/crash
 ├── serviceAccountKey.json # Firebase service account key(NO COMMIT)
 ├── .gitignore
 ├── package.json
@@ -69,8 +71,8 @@ By default, the server runs on: http://localhost:3000
 ### API Endpoints
 ```
 Method	Endpoint	    Description
-POST	/products	    Create a new product
-GET	    /products	    List all products
+POST    /products	    Create a new product
+GET     /products	    List all products
 GET	    /products/:id	Get a product by ID
 PUT	    /products/:id	Update a product
 DELETE	/products/:id	Delete a product
