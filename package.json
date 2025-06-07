@@ -16,8 +16,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
     "firebase": "^11.8.1",
     "firebase-admin": "^13.4.0",
+    "helmet": "^8.1.0",
     "zod": "^3.25.53"
   },
   "devDependencies": {
