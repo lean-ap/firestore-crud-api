@@ -27,4 +27,6 @@ export const ProductSchema = z.object({
   inStock: z.boolean(),
 });
 
+export const ProductUpdateSchema = ProductSchema.partial();
+
 export const productsCollection = db.collection('products');
