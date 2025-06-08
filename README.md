@@ -11,8 +11,9 @@ api/
 │   ├── index.ts                 # Main entry point (Express app)
 │   ├── middleware/              # Custom Express middleware
 │   │   ├── errorHamdler.ts      # Global error handler including zod error handling
-│   │   ├── logger.ts            #Log each request (method, path, time).
-│   │   └── validate.ts          # Zod based input validation
+│   │   ├── logger.ts            # Log each request (method, path, time).
+│   │   ├── validate.ts          # Zod based input validation.
+│   │   └── validateId.ts        # :id param validation middleware.
 │   ├── models/
 │   │   └── Products.ts          # Product data model
 │   └── routes/
